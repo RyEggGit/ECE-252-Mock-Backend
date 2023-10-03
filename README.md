@@ -24,7 +24,7 @@ Before you begin, ensure you have the following prerequisites:
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/ece-252-mock-backend.git
+git clone https://github.com/RyEggGit/ece-252-mock-backend.git
 ```
 
 ### Build the Docker Image
@@ -32,7 +32,7 @@ git clone https://github.com/your-username/ece-252-mock-backend.git
 Navigate to the cloned repository directory and use the following command to build the Docker image:
 
 ```bash
-docker build -t ece-252-mock-backend .
+docker build -t mock-ece-252 .
 ```
 
 ### Run the Docker Container
@@ -40,7 +40,7 @@ docker build -t ece-252-mock-backend .
 After the image is built, you can run a Docker container using the following command:
 
 ```bash
-docker run -d -p 8080:8080 --name mock-backend ece-252-mock-backend
+docker run -d -p 8080:8080 --name mock-backend mock-ece252
 ```
 
 The mock backend will now be running inside a Docker container and listening on port 8080.
