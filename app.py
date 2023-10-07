@@ -28,7 +28,7 @@ def image():
     random_num = random.randint(0,49)
     path = f"static/image_{num}/image-{random_num}.png"
     response = send_file(path, mimetype="image/png")
-    response.headers["X-Ece252-Fragment"] = random_num
+    response.headers["X-Ece252-Fragment"] = str(random_num)
     return response
 
 
