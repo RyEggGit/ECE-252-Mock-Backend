@@ -40,7 +40,7 @@ docker build -t mock-ece-252 .
 After the image is built, you can run a Docker container using the following command:
 
 ```bash
-docker run -d -p 8080:8080 --name mock-backend mock-ece252
+docker run -d -p 8080:5002 --name mock-backend mock-ece252
 ```
 
 The mock backend will now be running inside a Docker container and listening on port 8080.
